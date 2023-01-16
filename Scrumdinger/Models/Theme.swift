@@ -61,6 +61,7 @@ enum Theme: String {
                 .teal,
                 .yellow:
             return .yellow
+
         case .indigo,
                 .magenta,
                 .navy,
