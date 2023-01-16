@@ -13,12 +13,12 @@ struct CardView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(scrum.title)
-                .font(.headline)
                 .accessibilityAddTraits(.isHeader)
+                .font(.headline)
             Spacer()
             HStack {
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
-                    .accessibilityLabel("\(scrum.attendees.count) участ.")
+                    .accessibilityLabel("\(scrum.attendees.count) участники")
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
                     .accessibilityLabel("\(scrum.lengthInMinutes) мин. встреча")
